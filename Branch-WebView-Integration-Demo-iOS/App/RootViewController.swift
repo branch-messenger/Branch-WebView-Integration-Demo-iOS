@@ -49,8 +49,23 @@ class RootViewController: UIViewController {
 
     @objc private func launchWebView() {
         let vc = BranchWebViewController()
+        vc.delegate = self
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
+    }
+
+}
+
+// MARK: - BranchWebViewControllerDelegate
+
+extension RootViewController: BranchWebViewControllerDelegate {
+
+    func branchWebViewControllerDidCancel(_ viewController: BranchWebViewController) {
+        viewController.dismiss(animated: true)
+    }
+
+    func branchWebViewControllerDidComplete(_ viewController: BranchWebViewController) {
+        viewController.dismiss(animated: true)
     }
 
 }
