@@ -50,8 +50,9 @@ class RootViewController: UIViewController {
     @objc private func launchWebView() {
         let vc = BranchWebViewController()
         vc.delegate = self
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+        let nc = UINavigationController(rootViewController: vc)
+        nc.modalPresentationStyle = .fullScreen
+        self.present(nc, animated: true)
     }
 
 }

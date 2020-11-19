@@ -43,6 +43,33 @@ class BranchWebViewController: UIViewController {
         self.loadData()
     }
 
+    // MARK: - Layout
+
+    private func configureUI() {
+        self.view.backgroundColor = .systemBackground
+        self.view.addSubview(self.webView)
+        self.view.addSubview(self.activityIndicator)
+        self.configureNavigationBar()
+    }
+
+    private func configureNavigationBar() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(self.cancel))
+    }
+
+    private func configureConstraints() {
+        NSLayoutConstraint.activate([
+            self.webView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            self.webView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.webView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            self.webView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+
+            self.activityIndicator.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.activityIndicator.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        ])
+    }
+
+    // MARK: - Actions
+
     private func loadData() {
         var urlComponents = URLComponents(string: "https://accounts-dev.branchapp.com")
         urlComponents?.queryItems = [
@@ -56,24 +83,8 @@ class BranchWebViewController: UIViewController {
         self.webView.load(URLRequest(url: url))
     }
 
-    // MARK: - Layout
-
-    private func configureUI() {
-        self.view.backgroundColor = .systemBackground
-        self.view.addSubview(self.webView)
-        self.view.addSubview(self.activityIndicator)
-    }
-
-    private func configureConstraints() {
-        NSLayoutConstraint.activate([
-            self.webView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            self.webView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            self.webView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            self.webView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-
-            self.activityIndicator.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.activityIndicator.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-        ])
+    @objc private func cancel() {
+        self.delegate?.branchWebViewControllerDidCancel(self)
     }
 
 }
