@@ -75,8 +75,7 @@ class BranchWebViewController: UIViewController {
         urlComponents?.queryItems = [
             URLQueryItem(name: "embedded", value: "native"),
             URLQueryItem(name: "org", value: "100019"),
-            URLQueryItem(name: "callbackUrl", value: "https://branchapp.com/"),
-            URLQueryItem(name: "bypassFlow", value: "true")
+            URLQueryItem(name: "callbackUrl", value: "https://branchapp.com/")
         ]
 
         guard let urlString = urlComponents?.string, let url = URL(string: urlString) else { return }

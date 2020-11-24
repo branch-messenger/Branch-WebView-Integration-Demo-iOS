@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8FB67D525656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Branch-WebView-Integration-Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FB67D525656A8400DC1EB3 /* Branch-WebView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Branch-WebView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FB67D825656A8400DC1EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FB67DA25656A8400DC1EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8FB67DC25656A8400DC1EB3 /* BranchWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchWebViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		D8FB67CC25656A8400DC1EB3 = {
 			isa = PBXGroup;
 			children = (
-				D8FB67D725656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS */,
+				D8FB67D725656A8400DC1EB3 /* Branch-WebView-Demo */,
 				D8FB67D625656A8400DC1EB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,19 +48,19 @@
 		D8FB67D625656A8400DC1EB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8FB67D525656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS.app */,
+				D8FB67D525656A8400DC1EB3 /* Branch-WebView-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8FB67D725656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS */ = {
+		D8FB67D725656A8400DC1EB3 /* Branch-WebView-Demo */ = {
 			isa = PBXGroup;
 			children = (
 				D8FB67EE25656BBA00DC1EB3 /* App */,
 				D8FB67F225656BE200DC1EB3 /* Core */,
 				D8FB67F025656BCE00DC1EB3 /* Supporting Files */,
 			);
-			path = "Branch-WebView-Integration-Demo-iOS";
+			path = "Branch-WebView-Demo";
 			sourceTree = "<group>";
 		};
 		D8FB67EE25656BBA00DC1EB3 /* App */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8FB67D425656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS */ = {
+		D8FB67D425656A8400DC1EB3 /* Branch-WebView-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8FB67E925656A8700DC1EB3 /* Build configuration list for PBXNativeTarget "Branch-WebView-Integration-Demo-iOS" */;
+			buildConfigurationList = D8FB67E925656A8700DC1EB3 /* Build configuration list for PBXNativeTarget "Branch-WebView-Demo" */;
 			buildPhases = (
 				D8FB67D125656A8400DC1EB3 /* Sources */,
 				D8FB67D225656A8400DC1EB3 /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = "Branch-WebView-Integration-Demo-iOS";
+			name = "Branch-WebView-Demo";
 			productName = "Branch-WebView-Integration-Demo-iOS";
-			productReference = D8FB67D525656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS.app */;
+			productReference = D8FB67D525656A8400DC1EB3 /* Branch-WebView-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8FB67D025656A8400DC1EB3 /* Build configuration list for PBXProject "Branch-WebView-Integration-Demo-iOS" */;
+			buildConfigurationList = D8FB67D025656A8400DC1EB3 /* Build configuration list for PBXProject "Branch-WebView-Demo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8FB67D425656A8400DC1EB3 /* Branch-WebView-Integration-Demo-iOS */,
+				D8FB67D425656A8400DC1EB3 /* Branch-WebView-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NLZUWZBPP;
-				INFOPLIST_FILE = "Branch-WebView-Integration-Demo-iOS/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Branch-WebView-Demo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.branchmessenger.Branch-WebView-Integration-Demo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NLZUWZBPP;
-				INFOPLIST_FILE = "Branch-WebView-Integration-Demo-iOS/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Branch-WebView-Demo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,14 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.branchmessenger.Branch-WebView-Integration-Demo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8FB67D025656A8400DC1EB3 /* Build configuration list for PBXProject "Branch-WebView-Integration-Demo-iOS" */ = {
+		D8FB67D025656A8400DC1EB3 /* Build configuration list for PBXProject "Branch-WebView-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8FB67E725656A8700DC1EB3 /* Debug */,
@@ -347,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8FB67E925656A8700DC1EB3 /* Build configuration list for PBXNativeTarget "Branch-WebView-Integration-Demo-iOS" */ = {
+		D8FB67E925656A8700DC1EB3 /* Build configuration list for PBXNativeTarget "Branch-WebView-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8FB67EA25656A8700DC1EB3 /* Debug */,
